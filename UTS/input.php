@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -13,7 +15,7 @@
             <table>
                 <tr>
                     <td>Nama Wilayah</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td>
                         <select name="wilayah" required>
                             <option value="">Pilih Wilayah</option>
@@ -26,38 +28,39 @@
                 </tr>
                 <tr>
                     <td>Jumlah Positif</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td><input type="text" name="positif" placeholder="Jumlah Positif" required /></td>
                 </tr>
                 <tr>
                     <td>Jumlah Dirawat</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td><input type="text" name="dirawat" placeholder="Jumlah Dirawat" /></td>
                 </tr>
                 <tr>
                     <td>Jumlah Sembuh</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td><input type="text" name="sembuh" placeholder="Jumlah Sembuh" /></td>
                 </tr>
                 <tr>
                     <td>Jumlah Meninggal</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td><input type="text" name="meninggal" placeholder="Jumlah Meninggal" /></td>
                 </tr>
                 <tr>
                     <td>Nama Operator</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td><input type="text" name="nama_operator" placeholder="Nama Anda" /></td>
                 </tr>
                 <tr>
                     <td>NIM Mahasiswa</td>
-                    <td class="samadengan">:</td>
+                    <td class="adalah">:</td>
                     <td><input type="text" name="nim" placeholder="NIM Anda" /></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>&nbsp;&nbsp;<input type="submit" name="kirim" value="Simpan" />&nbsp;<input type="reset" name="del" value="Hapus" /></td>
+                    <td>&nbsp;&nbsp;<input type="submit" name="kirim" value="Simpan" />
+                            &nbsp;<input type="reset" name="del" value="Hapus" /></td>
 
                 </tr>
             </table>
