@@ -1,7 +1,7 @@
 <?php
 
     $con = mysqli_connect("localhost:3308","root","");
-    $dbname="lat_dbas";
+    $dbname="lat_dbase";
     mysqli_select_db($con, $dbname);
 
     // hapus table
