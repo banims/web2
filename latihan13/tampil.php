@@ -1,5 +1,4 @@
 <?php
-echo "Halaman Admin Panel Berita";
 include "koneksi.php";
 $perintah="SELECT * FROM articles ORDER BY articleID DESC";
 $hasil=mysqli_query($con, $perintah);
@@ -16,4 +15,5 @@ href=\"13latihan04.php?articleID=$row[0]\">Edit</a>
 href=\"13latihan06.php?articleID=$row[0]\">Hapus</a></LI><br>");
 }echo("</table>");
 echo "<br><a href=\"13latihan01.php\">Tambah</a>";
+echo "<br><a href=\"13latihan03.php\">Admin Panel</a>";
 ?>

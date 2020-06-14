@@ -1,19 +1,21 @@
 <?php
 include "koneksi.php";
-$judul = (isset($_POST['judul']));
-$penulis = (isset($_POST['penulis']));
-$lead = (isset($_POST['lead']));
-$content = (isset($_POST['content']));
-$waktu = date("d M Y, H:i");
+$judul= $_POST['title'];
+$penulis = $_POST['author'];
+$lead = $_POST['abstraksi'];
+$isi = $_POST['content'];
+$time=date("Y-m-d H:i:s");
 $lead = str_replace("\r\n","<br>",$lead);
-$content = str_replace("\r\n","<br>",$content);
+$isi = str_replace("\r\n","<br>",$isi);
+
 $query = "INSERT INTO articles (judul,penulis,lead,content,waktu)
- values('$judul','$penulis','$lead','$content','$waktu')";
+values('$judul','$penulis','$lead','$isi','$time')";
+
 $result = mysqli_query($con, $query);
 if($result){
- echo "<h3 align=center>Proses penambahan artikel berhasil</h3>";
- echo "<A href=\"13latihan03.php\">List</A>";
+echo "<h3 align=center>Proses penambahan artikel berhasil</h3>";
+echo "<A href=\"tampil.php\">List</A>";
 }else{
- echo "<h2 align=center>Proses penambahan artikel tidak berhasil</h2>";
+echo "<h2 align=center>Proses penambahan artikel tidak berhasil</h2>";
 }
-?> 
+?>
